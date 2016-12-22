@@ -1,20 +1,15 @@
-﻿生成启动时间为 2016/12/21 22:57:14。
-     1>项目“E:\TEST\lottery\lottery\lottery.vcxproj”在节点 2 上(rebuild 个目标)。
-     1>_PrepareForClean:
-         正在删除文件“Debug\lottery.lastbuildstate”。
-       InitializeBuildStatus:
+﻿生成启动时间为 2016/12/22 1:14:49。
+     1>项目“E:\TEST\lottery\lottery\lottery.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
          正在创建“Debug\lottery.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\lottery.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\lottery.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt lottery.cpp lotteryDlg.cpp
+         所有输出均为最新。
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\lottery.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt lotteryDlg.cpp
          lotteryDlg.cpp
-         lottery.cpp
-         正在生成代码...
        ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\lottery.res" lottery.rc 
+         所有输出均为最新。
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\lottery.exe.embed.manifest.res" Debug\lottery_manifest.rc 
+         所有输出均为最新。
        Link:
          D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\TEST\lottery\Debug\lottery.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\lottery.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\TEST\lottery\Debug\lottery.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\TEST\lottery\Debug\lottery.lib" /MACHINE:X86 Debug\lottery.res
          Debug\lottery.exe.embed.manifest.res
@@ -22,21 +17,16 @@
          Debug\lotteryDlg.obj
          Debug\stdafx.obj
        Manifest:
-         正在删除文件“Debug\lottery.exe.embed.manifest”。
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\lottery.exe.embed.manifest" /manifest Debug\lottery.exe.intermediate.manifest "D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\lottery.exe.embed.manifest.res" Debug\lottery_manifest.rc 
+         所有输出均为最新。
        LinkEmbedManifest:
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\TEST\lottery\Debug\lottery.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\lottery.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\TEST\lottery\Debug\lottery.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\TEST\lottery\Debug\lottery.lib" /MACHINE:X86 Debug\lottery.res
-         Debug\lottery.exe.embed.manifest.res
-         Debug\lottery.obj
-         Debug\lotteryDlg.obj
-         Debug\stdafx.obj
+         所有输出均为最新。
          lottery.vcxproj -> E:\TEST\lottery\Debug\lottery.exe
        FinalizeBuildStatus:
          正在删除文件“Debug\lottery.unsuccessfulbuild”。
          正在对“Debug\lottery.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“E:\TEST\lottery\lottery\lottery.vcxproj”(rebuild 个目标)的操作。
+     1>已完成生成项目“E:\TEST\lottery\lottery\lottery.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:26.10
+已用时间 00:00:10.44

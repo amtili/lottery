@@ -189,12 +189,19 @@ void ClotteryDlg::OnBnClickedButtonSelect()
 	{
 		AfxMessageBox(_T("error"));
 	}
+
+	//load img in here
 }
 
-
+static BOOL b_Started = 0;
+static BOOL b_Stopped = 0;
 void ClotteryDlg::OnBnClickedButtonStart()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	if(!b_Started)
+	{
+	b_Stopped = 0;
+	b_Started = 1;
 	//clear m_filePath;
 	m_fileName.clear();
 	// get dir name
@@ -242,6 +249,8 @@ void ClotteryDlg::OnBnClickedButtonStart()
 
 	//output
 	//ShowImage(GetDlgItem(IDC_STATIC_SHOWPIC)->GetDC(), selectedPath, 0, 0);
+	}
+	
 }
 
 BOOL ClotteryDlg::ShowImage(CDC* pDC, CString strPath, int x, int y)
@@ -351,12 +360,15 @@ static unsigned int g_Ntimes = 0;
 void ClotteryDlg::OnTimer(UINT_PTR nIDEvent)
 {
 	// TODO: Add your message handler code here and/or call default
+	if(b_Stopped)
+		return;
 	switch (nIDEvent)   
     {   
     case 1:
 		if(g_Ntimes >= m_fileName.size())
 			g_Ntimes = 0;
-			
+		//else
+			//g_Ntimes++;
 		ShowImage(GetDlgItem(IDC_STATIC_SHOWPIC)->GetDC(), m_fileName[g_Ntimes++], 0, 0);
 
         break;   
@@ -368,8 +380,14 @@ void ClotteryDlg::OnTimer(UINT_PTR nIDEvent)
 void ClotteryDlg::OnBnClickedButtonStop()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	if(!b_Stopped)
+	{
+	b_Stopped = 1;
 	KillTimer(1);
 	if(g_Ntimes >= m_fileName.size())
 			g_Ntimes = 0;
 	ShowImage(GetDlgItem(IDC_STATIC_SHOWPIC)->GetDC(), m_fileName[g_Ntimes], 0, 0);
+	b_Started = 0;
+	}
+
 }
